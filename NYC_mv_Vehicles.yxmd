@@ -1,0 +1,554 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="150" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings>
+        <Position x="150" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">UNIQUE_ID=True,COLLISION_ID=True,CRASH_DATE=True,CRASH_TIME=True,VEHICLE_ID=True,STATE_REGISTRATION=True,VEHICLE_TYPE=True,VEHICLE_MAKE=True,VEHICLE_MODEL=True,VEHICLE_YEAR=True,TRAVEL_DIRECTION=True,VEHICLE_OCCUPANTS=True,DRIVER_SEX=True,DRIVER_LICENSE_STATUS=True,DRIVER_LICENSE_JURISDICTION=True,PRE_CRASH=True,POINT_OF_IMPACT=True,VEHICLE_DAMAGE=True,VEHICLE_DAMAGE_1=True,VEHICLE_DAMAGE_2=True,VEHICLE_DAMAGE_3=True,PUBLIC_PROPERTY_DAMAGE=True,PUBLIC_PROPERTY_DAMAGE_TYPE=True,CONTRIBUTING_FACTOR_1=True,CONTRIBUTING_FACTOR_2=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="234" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jfird\AppData\Local\Temp\Engine_16736_0a64c211554f2843a70ac500c09468a3_\Engine_16736_5451928eb9a46545a0a5af402e33e23b~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="234" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jfird\AppData\Local\Temp\Engine_16736_0a64c211554f2843a70ac500c09468a3_\Engine_16736_731c20b4e23fec4db36a807c12817543~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="234" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jfird\AppData\Local\Temp\Engine_16736_0a64c211554f2843a70ac500c09468a3_\Engine_16736_d0f404761a57a4458e28a12f684dc990~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="330" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_WorkflowNYCMVDP" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+DI_WorkflowNYCMVDP = [Engine.WorkflowFileName]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="438" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>CRASH_DATE</InputFieldName>
+          <Language>English</Language>
+          <Format>MM/dd/yyyy</Format>
+          <OutputFieldName>DateTime_Out</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert CRASH_DATE From:
+MM/dd/yyyy</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jfird\AppData\Local\Temp\Engine_16736_0a64c211554f2843a70ac500c09468a3_\Engine_16736_5a6ed169226aae4bb01ed0d4efb83b67~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>True</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>True</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Motor_Vehicle_Collisions_-_Vehicles.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="UNIQUE_ID" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="COLLISION_ID" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="CRASH_DATE" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="CRASH_TIME" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_ID" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="STATE_REGISTRATION" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_TYPE" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_MAKE" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_MODEL" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_YEAR" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="TRAVEL_DIRECTION" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_OCCUPANTS" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="DRIVER_SEX" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="DRIVER_LICENSE_STATUS" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="DRIVER_LICENSE_JURISDICTION" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="PRE_CRASH" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="POINT_OF_IMPACT" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_DAMAGE" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_DAMAGE_1" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_DAMAGE_2" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_DAMAGE_3" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="PUBLIC_PROPERTY_DAMAGE" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="PUBLIC_PROPERTY_DAMAGE_TYPE" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="CONTRIBUTING_FACTOR_1" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="CONTRIBUTING_FACTOR_2" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="534" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>CRASH_TIME</InputFieldName>
+          <Language>English</Language>
+          <Format>HH:mm:ss</Format>
+          <OutputFieldName>DateTime_Out</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert CRASH_TIME From:
+HH:mm:ss</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="618" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="702" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:ZURI\SQLEXPRESS|||NYC_Vehicles</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Overwrite</OutputOption>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:ZURI\SQLEXPRESS
+Query=NYC_Vehicles</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="150" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="UNIQUE_ID" selected="True" />
+            <Field field="COLLISION_ID" selected="True" />
+            <Field field="CRASH_DATE" selected="True" />
+            <Field field="CRASH_TIME" selected="True" />
+            <Field field="VEHICLE_ID" selected="True" />
+            <Field field="STATE_REGISTRATION" selected="True" />
+            <Field field="VEHICLE_TYPE" selected="True" />
+            <Field field="VEHICLE_MAKE" selected="True" />
+            <Field field="VEHICLE_MODEL" selected="True" />
+            <Field field="VEHICLE_YEAR" selected="True" />
+            <Field field="TRAVEL_DIRECTION" selected="True" />
+            <Field field="VEHICLE_OCCUPANTS" selected="True" />
+            <Field field="DRIVER_SEX" selected="True" />
+            <Field field="DRIVER_LICENSE_STATUS" selected="True" />
+            <Field field="DRIVER_LICENSE_JURISDICTION" selected="True" />
+            <Field field="PRE_CRASH" selected="True" />
+            <Field field="POINT_OF_IMPACT" selected="True" />
+            <Field field="VEHICLE_DAMAGE" selected="True" />
+            <Field field="VEHICLE_DAMAGE_1" selected="True" />
+            <Field field="VEHICLE_DAMAGE_2" selected="True" />
+            <Field field="VEHICLE_DAMAGE_3" selected="True" />
+            <Field field="PUBLIC_PROPERTY_DAMAGE" selected="True" />
+            <Field field="PUBLIC_PROPERTY_DAMAGE_TYPE" selected="True" />
+            <Field field="CONTRIBUTING_FACTOR_1" selected="True" />
+            <Field field="CONTRIBUTING_FACTOR_2" selected="True" />
+            <Field field="*Unknown" selected="False" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="UNIQUE_ID" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="Int32" />
+            <Field name="COLLISION_ID" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="Int32" />
+            <Field name="CRASH_DATE" size="10" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="String" />
+            <Field name="CRASH_TIME" size="5" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="String" />
+            <Field name="VEHICLE_ID" size="36" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="STATE_REGISTRATION" size="2" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="String" />
+            <Field name="VEHICLE_TYPE" size="38" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="VEHICLE_MAKE" size="47" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="VEHICLE_MODEL" size="25" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="VEHICLE_YEAR" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="Int16" />
+            <Field name="TRAVEL_DIRECTION" size="9" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="VEHICLE_OCCUPANTS" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="Int32" />
+            <Field name="DRIVER_SEX" size="1" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="String" />
+            <Field name="DRIVER_LICENSE_STATUS" size="10" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="DRIVER_LICENSE_JURISDICTION" size="8" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="PRE_CRASH" size="26" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="POINT_OF_IMPACT" size="25" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="VEHICLE_DAMAGE" size="25" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="VEHICLE_DAMAGE_1" size="25" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="VEHICLE_DAMAGE_2" size="25" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="VEHICLE_DAMAGE_3" size="25" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="PUBLIC_PROPERTY_DAMAGE" size="11" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="PUBLIC_PROPERTY_DAMAGE_TYPE" size="254" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="CONTRIBUTING_FACTOR_1" size="53" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+            <Field name="CONTRIBUTING_FACTOR_2" size="53" source="File: C:\Users\jfird\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="246" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="UNIQUE_ID" selected="True" />
+            <SelectField field="COLLISION_ID" selected="True" />
+            <SelectField field="CRASH_DATE" selected="True" />
+            <SelectField field="CRASH_TIME" selected="True" />
+            <SelectField field="VEHICLE_ID" selected="True" />
+            <SelectField field="STATE_REGISTRATION" selected="True" />
+            <SelectField field="VEHICLE_TYPE" selected="True" />
+            <SelectField field="VEHICLE_MAKE" selected="True" />
+            <SelectField field="VEHICLE_MODEL" selected="True" />
+            <SelectField field="VEHICLE_YEAR" selected="True" />
+            <SelectField field="TRAVEL_DIRECTION" selected="True" />
+            <SelectField field="VEHICLE_OCCUPANTS" selected="True" />
+            <SelectField field="DRIVER_SEX" selected="True" />
+            <SelectField field="DRIVER_LICENSE_STATUS" selected="True" />
+            <SelectField field="DRIVER_LICENSE_JURISDICTION" selected="True" />
+            <SelectField field="PRE_CRASH" selected="True" />
+            <SelectField field="POINT_OF_IMPACT" selected="True" />
+            <SelectField field="VEHICLE_DAMAGE" selected="True" />
+            <SelectField field="VEHICLE_DAMAGE_1" selected="True" />
+            <SelectField field="VEHICLE_DAMAGE_2" selected="True" />
+            <SelectField field="VEHICLE_DAMAGE_3" selected="True" />
+            <SelectField field="PUBLIC_PROPERTY_DAMAGE" selected="True" />
+            <SelectField field="PUBLIC_PROPERTY_DAMAGE_TYPE" selected="True" />
+            <SelectField field="CONTRIBUTING_FACTOR_1" selected="True" />
+            <SelectField field="CONTRIBUTING_FACTOR_2" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Reports" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="2" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>NYC_mv_Vehicles</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a8929fd9-0ca6-4af9-94fd-0788d8f8ee79" />
+      <Telemetry>
+        <PreviousWorkflowId value="e8d263f2-9efb-42be-a930-907bf47b6f2b" />
+        <OriginWorkflowId value="e8d263f2-9efb-42be-a930-907bf47b6f2b" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

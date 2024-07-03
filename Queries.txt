@@ -1,0 +1,65 @@
+1) How Many Car Accidents Are There in NYC Every Year?
+
+SELECT YEAR(Collion_Dt) AS Year, COUNT(*) AS TotalAccidents
+FROM FCT_Collisions
+GROUP BY YEAR(Collion_Dt);
+
+2) Which Boroughs in New York City Have the Most Accidents?
+
+SELECT dim_geo.Borough, COUNT(*) AS num_accidents
+FROM FCT_Collisions
+JOIN dim_geo ON FCT_Collisions.Geo_SK = dim_geo.Geo_SK
+GROUP BY dim_geo.Borough
+ORDER BY num_accidents DESC;
+
+3) How Many NYC Car Accidents Result in an Injury?
+
+SELECT COUNT(DISTINCT Collision_ID) as num_injury_collisions
+FROM FCT_Collisions fc
+JOIN dim_Persons dp ON fc.Collision_ID = dp.Unique_ID
+WHERE dp.Person_Injury = 'INJURED'
+
+4) Which NYC Borough Has the Most Fatal Car Accidents?
+
+SELECT d.Borough, COUNT(*) as num_fatal_accidents
+FROM FCT_Collisions f
+JOIN dim_geo d ON f.Location = d.Location
+WHERE f.Number_pf_persons_killed > 0
+GROUP BY d.Borough
+ORDER BY num_fatal_accidents DESC
+LIMIT 1;
+
+5) When Do Most New York City Car Accidents Happen?
+
+SELECT Collision_hour, COUNT(*) AS num_collisions
+FROM FCT_Collisions
+GROUP BY Collision_hour
+ORDER BY num_collisions DESC
+LIMIT 1;
+
+6) How Common Are Bicycle Accidents in NYC?
+
+SELECT COUNT(*) AS total_bicycle_accidents 
+FROM FCT_Collisions 
+WHERE Number_of_cyclists_injured > 0 OR Number_of_cyclists_killed > 0;
+
+7) How Often Are Pedestrians Involving New York Traffic Accidents?
+
+SELECT COUNT(*) as num_accidents_involving_pedestrians
+FROM FCT_Collisions fc
+JOIN dim_Persons dp ON fc.Collision_ID = dp.Unique_ID
+JOIN dim_Pedestrian dpd ON dp.Person_Type = 'PEDESTRIAN' AND dpd.Ped_sk = dp.Person_sk
+
+8) How Many Motorcyclists are Injured or Killed in NYC Accidents?
+
+SELECT SUM(Number_of_motorcyclists_injured) as Total_injured, SUM(Number_of_motorcyclists_killed) as Total_killed
+FROM FCT_Collisions
+
+9) Are Trucks Involved in Many New York Accidents?
+
+SELECT COUNT(*)
+FROM dim_Vehicles v
+JOIN FCT_Collisions c ON v.Unique_ID = c.Unique_ID
+WHERE v.Vehicle_Type = 'TRUCK';
+
+

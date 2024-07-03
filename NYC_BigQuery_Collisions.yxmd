@@ -1,0 +1,583 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="726" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jfird\AppData\Local\Temp\Engine_6952_53d514d59d776f44be42a6ae87ae06d7_\Engine_6952_e2402c2dd8d49a428635133dece6beb5~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="174" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings>
+        <Position x="174" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">UNIQUE_ID=True,COLLISION_ID=True,CRASH_DATE=True,CRASH_TIME=True,VEHICLE_ID=True,STATE_REGISTRATION=True,VEHICLE_TYPE=True,VEHICLE_MAKE=True,VEHICLE_MODEL=True,VEHICLE_YEAR=True,TRAVEL_DIRECTION=True,VEHICLE_OCCUPANTS=True,DRIVER_SEX=True,DRIVER_LICENSE_STATUS=True,DRIVER_LICENSE_JURISDICTION=True,PRE_CRASH=True,POINT_OF_IMPACT=True,VEHICLE_DAMAGE=True,VEHICLE_DAMAGE_1=True,VEHICLE_DAMAGE_2=True,VEHICLE_DAMAGE_3=True,PUBLIC_PROPERTY_DAMAGE=True,PUBLIC_PROPERTY_DAMAGE_TYPE=True,CONTRIBUTING_FACTOR_1=True,CONTRIBUTING_FACTOR_2=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="246" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jfird\AppData\Local\Temp\Engine_6952_53d514d59d776f44be42a6ae87ae06d7_\Engine_6952_65945f740b6cc54fab142fe18e440a57~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="246" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jfird\AppData\Local\Temp\Engine_6952_53d514d59d776f44be42a6ae87ae06d7_\Engine_6952_03fad1274ba06c4ba0d3a26f17e177a4~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="246" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jfird\AppData\Local\Temp\Engine_6952_53d514d59d776f44be42a6ae87ae06d7_\Engine_6952_2e560ffbb9b7ca459947286dca6de583~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="342" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_WorkflowNYCMVDP" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+DI_WorkflowNYCMVDP = [Engine.WorkflowFileName]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="462" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>day</InputFieldName>
+          <Language>English</Language>
+          <Format>MM/dd/yyyy</Format>
+          <OutputFieldName>DateTime_Out</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert day From:
+MM/dd/yyyy</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>True</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>True</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>NYC_BigQuery_Collisions - results-20230418-185518.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="borough" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="contributing_factor_vehicle_1" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="contributing_factor_vehicle_2" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="contributing_factor_vehicle_3" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="contributing_factor_vehicle_4" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="contributing_factor_vehicle_5" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="cross_street_name" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="timestamp" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="latitude" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="longitude" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="location" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="number_of_cyclist_injured" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="number_of_cyclist_killed" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="number_of_motorist_injured" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="number_of_motorist_killed" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="number_of_pedestrians_injured" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="number_of_pedestrians_killed" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="number_of_persons_injured" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="number_of_persons_killed" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="off_street_name" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="on_street_name" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="unique_key" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="vehicle_type_code1" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="vehicle_type_code2" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="vehicle_type_code_3" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="vehicle_type_code_4" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="vehicle_type_code_5" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="zip_code" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="timestamp_1" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="day" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="time" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="hour" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="dayoftheweek" size="254" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="558" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>time</InputFieldName>
+          <Language>English</Language>
+          <Format>HH:mm:ss</Format>
+          <OutputFieldName>DateTime_Out</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert time From:
+HH:mm:ss</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="630" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>CollisionID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="726" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:ZURI\SQLEXPRESS|||NYC_BigQuery_Collisions</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Overwrite</OutputOption>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:ZURI\SQLEXPRESS
+Query=NYC_BigQuery_Collisions</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="174" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="borough" selected="True" />
+            <Field field="contributing_factor_vehicle_1" selected="True" />
+            <Field field="contributing_factor_vehicle_2" selected="True" />
+            <Field field="contributing_factor_vehicle_3" selected="True" />
+            <Field field="contributing_factor_vehicle_4" selected="True" />
+            <Field field="contributing_factor_vehicle_5" selected="True" />
+            <Field field="cross_street_name" selected="True" />
+            <Field field="timestamp" selected="True" />
+            <Field field="latitude" selected="True" />
+            <Field field="longitude" selected="True" />
+            <Field field="location" selected="True" />
+            <Field field="number_of_cyclist_injured" selected="True" />
+            <Field field="number_of_cyclist_killed" selected="True" />
+            <Field field="number_of_motorist_injured" selected="True" />
+            <Field field="number_of_motorist_killed" selected="True" />
+            <Field field="number_of_pedestrians_injured" selected="True" />
+            <Field field="number_of_pedestrians_killed" selected="True" />
+            <Field field="number_of_persons_injured" selected="True" />
+            <Field field="number_of_persons_killed" selected="True" />
+            <Field field="off_street_name" selected="True" />
+            <Field field="on_street_name" selected="True" />
+            <Field field="unique_key" selected="True" />
+            <Field field="vehicle_type_code1" selected="True" />
+            <Field field="vehicle_type_code2" selected="True" />
+            <Field field="vehicle_type_code_3" selected="True" />
+            <Field field="vehicle_type_code_4" selected="True" />
+            <Field field="vehicle_type_code_5" selected="True" />
+            <Field field="zip_code" selected="True" />
+            <Field field="timestamp_1" selected="True" />
+            <Field field="day" selected="True" />
+            <Field field="time" selected="True" />
+            <Field field="hour" selected="True" />
+            <Field field="dayoftheweek" selected="True" />
+            <Field field="*Unknown" selected="False" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="borough" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Bool" />
+            <Field name="contributing_factor_vehicle_1" size="53" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="contributing_factor_vehicle_2" size="53" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="contributing_factor_vehicle_3" size="30" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="contributing_factor_vehicle_4" size="30" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="contributing_factor_vehicle_5" size="11" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="cross_street_name" size="30" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="timestamp" size="19" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="String" />
+            <Field name="latitude" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Bool" />
+            <Field name="longitude" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Bool" />
+            <Field name="location" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Bool" />
+            <Field name="number_of_cyclist_injured" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Byte" />
+            <Field name="number_of_cyclist_killed" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Byte" />
+            <Field name="number_of_motorist_injured" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Byte" />
+            <Field name="number_of_motorist_killed" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Byte" />
+            <Field name="number_of_pedestrians_injured" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Byte" />
+            <Field name="number_of_pedestrians_killed" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Byte" />
+            <Field name="number_of_persons_injured" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Byte" />
+            <Field name="number_of_persons_killed" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Byte" />
+            <Field name="off_street_name" size="40" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="on_street_name" size="32" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="unique_key" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Int32" />
+            <Field name="vehicle_type_code1" size="35" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="vehicle_type_code2" size="35" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="vehicle_type_code_3" size="35" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="vehicle_type_code_4" size="35" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="vehicle_type_code_5" size="13" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="V_String" />
+            <Field name="zip_code" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Bool" />
+            <Field name="timestamp_1" size="19" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="String" />
+            <Field name="day" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Date" />
+            <Field name="time" size="8" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="String" />
+            <Field name="hour" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="Byte" />
+            <Field name="dayoftheweek" size="9" source="File: C:\Users\jfird\Downloads\NYC_BigQuery_Collisions - results-20230418-185518.tsv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="258" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="borough" selected="True" />
+            <SelectField field="contributing_factor_vehicle_1" selected="True" />
+            <SelectField field="contributing_factor_vehicle_2" selected="True" />
+            <SelectField field="contributing_factor_vehicle_3" selected="True" />
+            <SelectField field="contributing_factor_vehicle_4" selected="True" />
+            <SelectField field="contributing_factor_vehicle_5" selected="True" />
+            <SelectField field="cross_street_name" selected="True" />
+            <SelectField field="timestamp" selected="True" />
+            <SelectField field="latitude" selected="True" />
+            <SelectField field="longitude" selected="True" />
+            <SelectField field="location" selected="True" />
+            <SelectField field="number_of_cyclist_injured" selected="True" />
+            <SelectField field="number_of_cyclist_killed" selected="True" />
+            <SelectField field="number_of_motorist_injured" selected="True" />
+            <SelectField field="number_of_motorist_killed" selected="True" />
+            <SelectField field="number_of_pedestrians_injured" selected="True" />
+            <SelectField field="number_of_pedestrians_killed" selected="True" />
+            <SelectField field="number_of_persons_injured" selected="True" />
+            <SelectField field="number_of_persons_killed" selected="True" />
+            <SelectField field="off_street_name" selected="True" />
+            <SelectField field="on_street_name" selected="True" />
+            <SelectField field="unique_key" selected="True" />
+            <SelectField field="vehicle_type_code1" selected="True" />
+            <SelectField field="vehicle_type_code2" selected="True" />
+            <SelectField field="vehicle_type_code_3" selected="True" />
+            <SelectField field="vehicle_type_code_4" selected="True" />
+            <SelectField field="vehicle_type_code_5" selected="True" />
+            <SelectField field="zip_code" selected="True" />
+            <SelectField field="timestamp_1" selected="True" />
+            <SelectField field="day" selected="True" />
+            <SelectField field="time" selected="True" />
+            <SelectField field="hour" selected="True" />
+            <SelectField field="dayoftheweek" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Reports" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="17" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>NYC_BigQuery_Collisions</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="952c00f1-add7-498e-90d9-4a76a5a0f4fb" />
+      <Telemetry>
+        <PreviousWorkflowId value="0430e519-0385-460d-be63-7ed2f2aa1a52" />
+        <OriginWorkflowId value="0430e519-0385-460d-be63-7ed2f2aa1a52" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
